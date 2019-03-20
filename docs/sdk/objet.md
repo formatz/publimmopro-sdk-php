@@ -1,0 +1,3 @@
+# Détail d'objet
+
+## Méthodes
