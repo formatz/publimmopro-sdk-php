@@ -11,7 +11,7 @@ $PClient = new PublimmoProClient([
 
 
 // then, ask for an object or a query
-$results = $PClient->query();
+$results = $PClient->with()->get();
 
-$object = $PClient->object(125944);
+$object = $PClient->object(125944)->get();
 ```

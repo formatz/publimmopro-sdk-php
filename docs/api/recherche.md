@@ -39,7 +39,7 @@ https://syn.publimmo.ch/api/v1/{idagence}/objets
 | courtierId | int | 10029 | N'affiche que les objets du courtier indiqué |
 | foreigners | int | 1 | Vente aux non résidents étrangers (quota) (1=oui) |
 | disponiblite | int | 2 | Code de disponiblité (0=disponible,1=reserve,2=vendu,3=option) |
-| residenceSecondaire | int | 1 | Vente en résidence seconatire si précisé dans Publimmo (1=OUI, 2=NON) |
+| residenceSecondaire | int | 1 | Vente en résidence secondaire si précisé dans Publimmo (1=OUI, 2=NON) |
 | locationType | int | 2 | Location saisonnière (1=semaine,2=saison,3=année) |
 | npaOrder | int | 1204 | Trie les résultats en commençant par le npa indiqué |
 
