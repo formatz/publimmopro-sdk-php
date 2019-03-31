@@ -1,6 +1,11 @@
 {
-    "name": "publimmopro/phpsdk",
-    "description": "PHP SDK for Publimmo Pro",
-    "type": "library",
-    "require": {}
+  "name": "publimmopro/phpsdk",
+  "description": "PHP SDK for Publimmo Pro",
+  "type": "library",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Client\\": "src/Client/"
+    }
+  }
 }
