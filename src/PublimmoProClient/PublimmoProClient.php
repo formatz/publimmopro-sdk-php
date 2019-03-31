@@ -1,4 +1,6 @@
 <?php
+use PublimmoPro\ObjectCollection;
+use PublimmoPro\ObjectEntity;
 
 namespace PublimmoPro;
 
@@ -134,6 +136,12 @@ class Client
 
     /** @var int $npaOrder Sort results beginning by this ZIPCode */
     private $npaOrder;
+
+    /** @var int $listPhotos Allow listing of pictures */
+    private $listPhotos = 1;
+
+    /** @var int $extendedInfos Allow to get more infos per object */
+    private $extendedInfos = 1;
 
     /**
      * Class constructor
@@ -324,7 +332,28 @@ class Client
         $args = array_filter(get_object_vars($this));
         $args['idagence'] = null;
 
-        echo self::API_URL.'/'.$this->idagence.'/?'.http_build_query($args);
+        $results = $this->fetch(self::API_URL.'/'.$this->idagence.'/objets?'.http_build_query($args));
+
+        return new ObjectCollection($results->results, $results->resultTotal);
+    }
+
+    private function fetch($url){
+        $url = str_replace(' ','%20',$url);
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_HEADER, false);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 0);
+        $result = curl_exec($ch);
+
+        if (curl_error($ch)) {
+            throw new \Exception(curl_error($ch));
+        }
+
+        curl_close($ch);
+        return json_decode($result);
     }
 }
 

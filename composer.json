@@ -1,0 +1,6 @@
+{
+    "name": "publimmopro/phpsdk",
+    "description": "PHP SDK for Publimmo Pro",
+    "type": "library",
+    "require": {}
+}
