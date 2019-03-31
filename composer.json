@@ -5,7 +5,7 @@
   "require": {},
   "autoload": {
     "psr-4": {
-      "PublimmoPro": "src"
+      "PublimmoPro\\": "src/PublimmoPro"
     }
   }
 }
