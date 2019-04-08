@@ -3,7 +3,7 @@
 ```
 $Client = new Client('2121313', 'unecle');
 $Client->setType(Client::PARKING);
-$Client->setPromotionType(2);
+$Client->setPromotionType(Client::APPARTMENT);
 $Client->query();
 ```
 
