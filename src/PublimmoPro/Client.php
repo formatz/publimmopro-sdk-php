@@ -1,6 +1,5 @@
 <?php
 use PublimmoPro\ObjectCollection;
-use PublimmoPro\ObjectEntity;
 
 namespace PublimmoPro;
 
@@ -30,6 +29,38 @@ class Client
     /** @var int RENT Internal number for transaction of type rent */
     public const RENT = 2;
 
+    /** @var int SORT_BY_PRICE Internal number for sorting by price */
+    public const SORT_BY_PRICE = 0;
+
+    /** @var int SORT_BY_ROOMS Internal number for sorting by rooms */
+    public const SORT_BY_ROOMS = 1;
+
+    /** @var int SORT_BY_SURFACE Internal number for sorting by surface */
+    public const SORT_BY_SURFACE = 2;
+
+    /** @var int SORT_BY_CREATED_AT Internal number for sorting by creation date */
+    public const SORT_BY_CREATED_AT = 3;
+
+    /** @var int AVAILABILITY_IS_AVAILABLE Internal number for availability is available */
+    public const AVAILABILITY_IS_AVAILABLE = 0;
+
+    /** @var int AVAILABILITY_IS_RESERVED Internal number for availability is reserved */
+    public const AVAILABILITY_IS_RESERVED = 1;
+
+    /** @var int AVAILABILITY_IS_SOLD Internal number for availability is sold */
+    public const AVAILABILITY_IS_SOLD = 2;
+
+    /** @var int AVAILABILITY_IS_OPTION Internal number for availability is option */
+    public const AVAILABILITY_IS_OPTION = 3;
+
+    /** @var int LOCATION_TYPE_WEEK Internal number for weekly location type */
+    public const LOCATION_TYPE_WEEK = 1;
+
+    /** @var int LOCATION_TYPE_SEASON Internal number for season location type */
+    public const LOCATION_TYPE_SEASON = 2;
+
+    /** @var int LOCATION_TYPE_YEAR Internal number for yearly location type */
+    public const LOCATION_TYPE_YEAR = 3;
 
 
     /** @var string API_URL holds the api URL */
@@ -154,7 +185,7 @@ class Client
     public function setType(int ...$types)
     {
         if (empty($types)) {
-            throw new \Exception('setType requires at least one parameter');
+            throw new \InvalidArgumentException('setType requires at least one parameter');
         }
 
         foreach ($types as $k => $type) {
@@ -173,6 +204,10 @@ class Client
 
     public function setPriceRange(int $min, int $max)
     {
+        if ($min > $max) {
+            throw new \InvalidArgumentException('min value cannot be higher than max value.');
+        }
+
         $this->prixMin = $min;
         $this->prixMax = $max;
 
@@ -181,6 +216,10 @@ class Client
 
     public function setSurfaceRange(int $min, int $max)
     {
+        if ($min > $max) {
+            throw new \InvalidArgumentException('min value cannot be higher than max value.');
+        }
+
         $this->surfaceMin = $min;
         $this->surfaceMax = $max;
 
@@ -189,6 +228,10 @@ class Client
 
     public function setRoomRange(int $min, int $max)
     {
+        if ($min > $max) {
+            throw new \InvalidArgumentException('min value cannot be higher than max value.');
+        }
+
         $this->pieceMin = $min;
         $this->pieceMax = $max;
 
@@ -202,9 +245,9 @@ class Client
         return $this;
     }
 
-    public function setDist(int $dist)
+    public function setDistance(int $distance)
     {
-        $this->dist = $dist;
+        $this->dist = $distance;
 
         return $this;
     }
@@ -232,6 +275,10 @@ class Client
 
     public function setCountry(string $countryCode)
     {
+        if (strlen($countryCode) !== 2) {
+            throw new \InvalidArgumentException('Country code must respect ISO 3166-alpha2 format (2 characters code)');
+        }
+
         $this->pays = $countryCode;
 
         return $this;
@@ -246,42 +293,64 @@ class Client
 
     public function setTransaction(int $transaction)
     {
+        if ($transaction !== 1 && $transaction !== 2 ) {
+            throw new \InvalidArgumentException('Transaction should be 1 (Client::BUY) or 2 (Client::RENT)');
+        }
+
         $this->t = $transaction;
 
         return $this;
     }
 
-    public function setSelfOnly(int $selfOnly)
+    public function setSelfOnly()
     {
-        $this->selfonly = $selfOnly;
+        $this->selfonly = 1;
 
         return $this;
     }
 
     public function setSort(int $sortBy)
     {
+        if (!in_array($sortBy, [self::SORT_BY_PRICE, self::SORT_BY_ROOMS, self::SORT_BY_SURFACE, self::SORT_BY_CREATED_AT])) {
+            throw new \InvalidArgumentException('Sort criterion should be one of '.self::SORT_BY_PRICE. '(Client::SORT_BY_PRICE), '.self::SORT_BY_ROOMS. '(Client::SORT_BY_ROOMS), '.self::SORT_BY_SURFACE. '(Client::SORT_BY_SURFACE), '.self::SORT_BY_CREATED_AT. '(Client::SORT_BY_CREATED_AT)');
+        }
+
         $this->tri = $sortBy;
 
         return $this;
     }
 
-    public function setTriSens(int $sortDirection)
+    public function setTriSens(string $sortDirection)
     {
-        $this->triSens = $sortDirection;
+        if ($sortDirection == 'asc') {
+            $this->triSens = 2;
+        } elseif ($sortDirection == 'desc') {
+            $this->triSens = 1;
+        } else {
+            throw new \InvalidArgumentException('Sort direction should be either "asc" or "desc"');
+        }
 
         return $this;
     }
 
     public function setLanguage(string $ul)
     {
+        if (!in_array($ul, ['fr', 'en', 'de'])) {
+            throw new \InvalidArgumentException('Language code should be one of "fr", "en" or "de"');
+        }
+
         $this->ul = $ul;
 
         return $this;
     }
 
-    public function setIds(string $ids)
+    public function setIds(int ...$ids)
     {
-        $this->ids = $ids;
+        if (empty($ids)) {
+            throw new \InvalidArgumentException('setIds requires at least one parameter');
+        }
+
+        $this->ids = implode(',',$ids);
 
         return $this;
     }
@@ -293,28 +362,35 @@ class Client
         return $this;
     }
 
-    public function setForeigners(bool $isForeigner)
+    public function setForeigners()
     {
-        $this->foreigners = $isForeigner;
+        $this->foreigners = 1;
         return $this;
     }
 
     public function setDisponiblite(int $disponibility)
     {
-        $this->disponibilite = $disponibility;
+        if (!in_array($disponibility, [self::AVAILABILITY_IS_AVAILABLE, self::AVAILABILITY_IS_RESERVED, self::AVAILABILITY_IS_SOLD, self::AVAILABILITY_IS_OPTION])) {
+            throw new \InvalidArgumentException('Availability parameter should be one of '.self::AVAILABILITY_IS_AVAILABLE. '(Client::AVAILABILITY_IS_AVAILABLE), '.self::AVAILABILITY_IS_RESERVED.'(Client::AVAILABILITY_IS_RESERVED), '.self::AVAILABILITY_IS_SOLD. '(Client::AVAILABILITY_IS_SOLD), '.self::AVAILABILITY_IS_OPTION.'(Client::AVAILABILITY_IS_OPTION)');
+        }
 
+        $this->disponiblite = $disponibility;
         return $this;
     }
 
-    public function setResidenceSecondaire(int $allow)
+    public function setResidenceSecondaire(bool $state)
     {
-        $this->residenceSecondaire = $allow;
+        $this->residenceSecondaire = $state ? 1 : 2;
         
         return $this;
     }
 
     public function setLocationType(int $type)
     {
+        if (!in_array($type, [self::LOCATION_TYPE_WEEK, self::LOCATION_TYPE_SEASON, self::LOCATION_TYPE_YEAR])) {
+            throw new \InvalidArgumentException('Type parameter should be one of '.self::LOCATION_TYPE_WEEK. '(Client::LOCATION_TYPE_WEEK), '.self::LOCATION_TYPE_SEASON.'(Client::LOCATION_TYPE_SEASON), '.self::LOCATION_TYPE_YEAR. '(Client::LOCATION_TYPE_YEAR)');
+        }
+
         $this->locationType = $type;
 
         return $this;
@@ -327,12 +403,21 @@ class Client
         return $this;
     }
 
-    public function query()
+    public function getQueryURL()
     {
-        $args = array_filter(get_object_vars($this));
+        $args = array_filter(get_object_vars($this), function ($arg) {
+            // accepts 0 values
+            return !empty($arg) || $arg === 0;
+        });
+
         $args['idagence'] = null;
 
-        $results = $this->fetch(self::API_URL.'/'.$this->idagence.'/objets?'.http_build_query($args));
+        return self::API_URL.'/'.$this->idagence.'/objets?'.http_build_query($args);
+    }
+
+    public function query()
+    {
+        $results = $this->fetch($this->getQueryURL());
 
         return new ObjectCollection($results->results, $results->resultTotal);
     }
