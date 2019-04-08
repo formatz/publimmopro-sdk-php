@@ -2,16 +2,15 @@
 
 ```
 $Client = new Client('2121313', 'unecle');
-$Client->setType(Client::PARKING);
-$Client->setPromotionType(Client::APPARTMENT);
-$Client->query();
+
+$Client->setType(Client::PARKING)
+       ->setDisponiblite(AVAILABILITY_IS_AVAILABLE)
+       ->query();
 ```
 
-## Instanciation
+## Initialisation
 
 Utilisez la classe `PublimmoPro\Client` pour pouvoir faire des requêtes à l'API.
-
-## Initialisation
 
 ```
 use \PublimmoPro\Client;
