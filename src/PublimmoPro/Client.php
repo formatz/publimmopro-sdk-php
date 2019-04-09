@@ -62,6 +62,15 @@ class Client
     /** @var int LOCATION_TYPE_YEAR Internal number for yearly location type */
     public const LOCATION_TYPE_YEAR = 3;
 
+    /** @var int PROMOTION_TYPE_NOT_PROMOTION Internal number all objects but promotion */
+    public const PROMOTION_TYPE_NOT_PROMOTION = 0;
+
+    /** @var int PROMOTION_TYPE_NEW Internal number for new objects type */
+    public const PROMOTION_TYPE_NEW = 1;
+
+    /** @var int PROMOTION_TYPE_PROMOTION Internal number for promotion type */
+    public const PROMOTION_TYPE_PROMOTION = 2;
+
 
     /** @var string API_URL holds the api URL */
     private const API_URL = 'http://syn.publimmo.ch/api/v1';
@@ -259,7 +268,7 @@ class Client
         return $this;
     }
 
-    public function setId(mixed $ref)
+    public function setReference($ref)
     {
         $this->id = $ref;
 
@@ -309,26 +318,21 @@ class Client
         return $this;
     }
 
-    public function setSort(int $sortBy)
+    public function setOrder(int $sortBy, string $sortDirection = null)
     {
         if (!in_array($sortBy, [self::SORT_BY_PRICE, self::SORT_BY_ROOMS, self::SORT_BY_SURFACE, self::SORT_BY_CREATED_AT])) {
             throw new \InvalidArgumentException('Sort criterion should be one of '.self::SORT_BY_PRICE. '(Client::SORT_BY_PRICE), '.self::SORT_BY_ROOMS. '(Client::SORT_BY_ROOMS), '.self::SORT_BY_SURFACE. '(Client::SORT_BY_SURFACE), '.self::SORT_BY_CREATED_AT. '(Client::SORT_BY_CREATED_AT)');
         }
 
-        $this->tri = $sortBy;
-
-        return $this;
-    }
-
-    public function setSortDirection(string $sortDirection)
-    {
         if ($sortDirection == 'asc') {
             $this->triSens = 2;
         } elseif ($sortDirection == 'desc') {
             $this->triSens = 1;
-        } else {
+        } elseif (!empty($sortDirection)) {
             throw new \InvalidArgumentException('Sort direction should be either "asc" or "desc"');
         }
+
+        $this->tri = $sortBy;
 
         return $this;
     }

@@ -1,4 +1,4 @@
-### setId(mixed $ref)
+### setReference($ref)
 
 Définit l'identifiant Publimmo ou la référence agence de l'objet à chercher.
 
@@ -13,6 +13,6 @@ Définit l'identifiant Publimmo ou la référence agence de l'objet à chercher.
 #### Exemple 
 
 ```php
-$Client->setId(54589);
-$Client->setId('Villa 34');
+$Client->setReference(54589);
+$Client->setReference('Villa 34');
 ```

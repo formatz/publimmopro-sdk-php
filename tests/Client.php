@@ -143,7 +143,7 @@ final class ClientTest extends TestCase
 
     public function testIdCanBeSet(): void
     {
-        $queryUrl = $this->Client->setId(8989)->getQueryURL();
+        $queryUrl = $this->Client->setReference(8989)->getQueryURL();
         $this->assertTrue(strpos($queryUrl, 'id=8989') !== false);
     }
 
@@ -194,38 +194,38 @@ final class ClientTest extends TestCase
 
     public function testSortCanBeSet(): void
     {
-        $queryUrl = $this->Client->setSort(Client::SORT_BY_PRICE)->getQueryURL();
+        $queryUrl = $this->Client->setOrder(Client::SORT_BY_PRICE)->getQueryURL();
         $this->assertTrue(strpos($queryUrl, 'tri='.Client::SORT_BY_PRICE) !== false);
 
-        $queryUrl = $this->Client->setSort(Client::SORT_BY_ROOMS)->getQueryURL();
+        $queryUrl = $this->Client->setOrder(Client::SORT_BY_ROOMS)->getQueryURL();
         $this->assertTrue(strpos($queryUrl, 'tri='.Client::SORT_BY_ROOMS) !== false);
 
-        $queryUrl = $this->Client->setSort(Client::SORT_BY_SURFACE)->getQueryURL();
+        $queryUrl = $this->Client->setOrder(Client::SORT_BY_SURFACE)->getQueryURL();
         $this->assertTrue(strpos($queryUrl, 'tri='.Client::SORT_BY_SURFACE) !== false);
 
-        $queryUrl = $this->Client->setSort(Client::SORT_BY_CREATED_AT)->getQueryURL();
+        $queryUrl = $this->Client->setOrder(Client::SORT_BY_CREATED_AT)->getQueryURL();
         $this->assertTrue(strpos($queryUrl, 'tri='.Client::SORT_BY_CREATED_AT) !== false);
     }
 
     public function testSortCanOnlyBeOfPredefinedTypes(): void
     {
         $this->expectException(InvalidArgumentException::class);
-        $queryUrl = $this->Client->setSort(6)->getQueryURL();
+        $queryUrl = $this->Client->setOrder(6)->getQueryURL();
     }
 
-    public function testTriSensCanBeSet(): void
+    public function testSortDirectionCanBeSet(): void
     {
-        $queryUrl = $this->Client->setTriSens('asc')->getQueryURL();
+        $queryUrl = $this->Client->setOrder(Client::SORT_BY_CREATED_AT, 'asc')->getQueryURL();
         $this->assertTrue(strpos($queryUrl, 'triSens=2') !== false);
 
-        $queryUrl = $this->Client->setTriSens('desc')->getQueryURL();
+        $queryUrl = $this->Client->setOrder(Client::SORT_BY_CREATED_AT, 'desc')->getQueryURL();
         $this->assertTrue(strpos($queryUrl, 'triSens=1') !== false);
     }
 
-    public function testTriSensCanOnlyBeOfPredefinedType(): void
+    public function testSortDirectionCanOnlyBeOfPredefinedType(): void
     {
         $this->expectException(InvalidArgumentException::class);
-        $queryUrl = $this->Client->setTriSens('asc,desc')->getQueryURL();
+        $queryUrl = $this->Client->setOrder(Client::SORT_BY_CREATED_AT, 'asc,desc')->getQueryURL();
     }
 
     public function testLanguageCanBeSet(): void

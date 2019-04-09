@@ -61,7 +61,7 @@ $PublimmoClient = new Client(99999, 'key');
 
 ---
 
-[filename](client/setId.md ':include')
+[filename](client/setReference.md ':include')
 
 ---
 
@@ -109,11 +109,7 @@ $PublimmoClient = new Client(99999, 'key');
 
 ---
 
-[filename](client/setSort.md ':include')
-
----
-
-[filename](client/setSortDirection.md ':include')
+[filename](client/setOrder.md ':include')
 
 ---
 
