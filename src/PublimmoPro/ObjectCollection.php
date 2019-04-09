@@ -1,5 +1,4 @@
 <?php
-
 namespace PublimmoPro;
 
 class ObjectCollection
@@ -84,6 +83,7 @@ class ObjectCollection
             return false;
         }
 
+
         // allow to input an unique instruction as a string
         if (!is_array($instructions)) {
             $instructions = [$instructions];
@@ -93,6 +93,11 @@ class ObjectCollection
 
         $instructions = array_map(function($instruction) {
             list($field, $direction, $type) = explode(':', $instruction);
+
+            if (!in_array($direction, ['asc', 'desc'])) {
+                throw new \InvalidArgumentException('Direction instruction should be one of "asc" or "desc"');
+            }
+
             return compact('field', 'direction', 'type');
         }, $lines);
 
