@@ -21,10 +21,6 @@ $PublimmoClient = new Client(99999, 'key');
 
 ## Méthodes
 
-[filename](client/setType.md ':include')
-
----
-
 [filename](client/query.md ':include')
 
 ---
@@ -81,7 +77,7 @@ $PublimmoClient = new Client(99999, 'key');
 
 ---
 
-[filename](client/setPriceRange.md ':include')
+[filename](client/setRange.md ':include')
 
 ---
 
@@ -97,10 +93,6 @@ $PublimmoClient = new Client(99999, 'key');
 
 ---
 
-[filename](client/setRoomRange.md ':include')
-
----
-
 [filename](client/setSearchString.md ':include')
 
 ---
@@ -113,15 +105,9 @@ $PublimmoClient = new Client(99999, 'key');
 
 ---
 
-[filename](client/setSurfaceRange.md ':include')
-
----
-
 [filename](client/setTransaction.md ':include')
 
 ---
 
 [filename](client/setType.md ':include')
-
----
 

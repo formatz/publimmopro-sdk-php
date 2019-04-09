@@ -211,38 +211,31 @@ class Client
         return $this;
     }
 
-    public function setPriceRange(int $min, int $max)
+    public function setRange(string $type, int $min, int $max)
     {
         if ($min > $max) {
             throw new \InvalidArgumentException('min value cannot be higher than max value.');
         }
 
-        $this->prixMin = $min;
-        $this->prixMax = $max;
+        switch ($type) {
+            case 'price':
+                $this->prixMin = $min;
+                $this->prixMax = $max;
+                break;
 
-        return $this;
-    }
+            case 'surface':
+                $this->surfaceMin = $min;
+                $this->surfaceMax = $max;
+                break;
+            
+            case 'room':
+                $this->pieceMin = $min;
+                $this->pieceMax = $max;
+                break;
 
-    public function setSurfaceRange(int $min, int $max)
-    {
-        if ($min > $max) {
-            throw new \InvalidArgumentException('min value cannot be higher than max value.');
+            default:
+                throw new \InvalidArgumentException('range type should be one of "price", "surface" or "room".');
         }
-
-        $this->surfaceMin = $min;
-        $this->surfaceMax = $max;
-
-        return $this;
-    }
-
-    public function setRoomRange(int $min, int $max)
-    {
-        if ($min > $max) {
-            throw new \InvalidArgumentException('min value cannot be higher than max value.');
-        }
-
-        $this->pieceMin = $min;
-        $this->pieceMax = $max;
 
         return $this;
     }

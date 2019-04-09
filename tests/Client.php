@@ -86,41 +86,35 @@ final class ClientTest extends TestCase
 
     public function testPriceRangeCanBeSet(): void
     {
-        $queryUrl = $this->Client->setPriceRange(0, 3000)->getQueryURL();
+        $queryUrl = $this->Client->setRange('price', 0, 3000)->getQueryURL();
         $this->assertTrue(strpos($queryUrl, 'prixMin=0') !== false);
         $this->assertTrue(strpos($queryUrl, 'prixMax=3000') !== false);
     }
 
-    public function testPriceRangeCannotHaveMaxValueHigherThanMinValue(): void
-    {
-        $this->expectException(InvalidArgumentException::class);
-        $queryUrl = $this->Client->setPriceRange(3000, 0)->getQueryURL();
-    }
-
     public function testSurfaceRangeCanBeSet(): void
     {
-        $queryUrl = $this->Client->setSurfaceRange(0, 300)->getQueryURL();
+        $queryUrl = $this->Client->setRange('surface', 0, 300)->getQueryURL();
         $this->assertTrue(strpos($queryUrl, 'surfaceMin=0') !== false);
         $this->assertTrue(strpos($queryUrl, 'surfaceMax=300') !== false);
     }
 
-    public function testSurfaceRangeCannotHaveMaxValueHigherThanMinValue(): void
-    {
-        $this->expectException(InvalidArgumentException::class);
-        $queryUrl = $this->Client->setSurfaceRange(300, 0)->getQueryURL();
-    }
-
     public function testRoomRangeCanBeSet(): void
     {
-        $queryUrl = $this->Client->setRoomRange(0, 3)->getQueryURL();
+        $queryUrl = $this->Client->setRange('room', 0, 3)->getQueryURL();
         $this->assertTrue(strpos($queryUrl, 'pieceMin=0') !== false);
         $this->assertTrue(strpos($queryUrl, 'pieceMax=3') !== false);
     }
 
-    public function testRoomRangeCannotHaveMaxValueHigherThanMinValue(): void
+    public function testRangeTypeCanOnlyBeOfPredefinedType(): void
     {
         $this->expectException(InvalidArgumentException::class);
-        $queryUrl = $this->Client->setRoomRange(3, 0)->getQueryURL();
+        $queryUrl = $this->Client->setRange('notexistingtype', 3000, 5990)->getQueryURL();
+    }
+
+    public function testRangeCannotHaveMaxValueHigherThanMinValue(): void
+    {
+        $this->expectException(InvalidArgumentException::class);
+        $queryUrl = $this->Client->setRange('price', 3000, 0)->getQueryURL();
     }
 
     public function testCityIdCanBeSet(): void
