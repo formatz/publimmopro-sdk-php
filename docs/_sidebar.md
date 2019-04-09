@@ -1,6 +1,7 @@
 * SDK
   * [Démarrage](/sdk/demarrage.md)
   * [Recherche](/sdk/recherche.md)
+  * [Object Collection](/sdk/objectCollection.md)
   * [Détail d'objet](/sdk/objet.md)
 
 * API

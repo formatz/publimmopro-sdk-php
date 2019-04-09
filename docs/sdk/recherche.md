@@ -1,10 +1,12 @@
 # Recherche
 
 ```php
+use \PublimmoPro\Client;
+
 $Client = new Client('2121313', 'unecle');
 
 $Client->setType(Client::PARKING)
-       ->setDisponiblite(AVAILABILITY_IS_AVAILABLE)
+       ->setDisponiblite(Client::AVAILABILITY_IS_AVAILABLE)
        ->query();
 ```
 

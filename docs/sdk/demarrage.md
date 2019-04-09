@@ -10,15 +10,8 @@ Ajoutez ce package à votre fichier composer.json
 "repositories": [
   ...
   {
-    "type": "package",
-    "package": {
-      "name": "publimmopro/phpsdk",
-      "version": "0.1.0",
-      "dist": {
-        "type": "zip",
-        "url": "https://github.com/alanpilloud/publimmopro-sdk-php/archive/master.zip"
-      }
-    }
+    "type": "vcs",
+    "url": "git@github.com:alanpilloud/publimmopro-sdk-php.git"
   }
   ...
 ],

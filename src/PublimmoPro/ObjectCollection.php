@@ -36,7 +36,8 @@ class ObjectCollection
      *
      * @return mixed                       false or ObjectCollection
      */
-    public function filter(string $filter_type, $objects_to_filter){
+    public function filter(string $filter_type, $objects_to_filter)
+    {
         if (empty($objects_to_filter)){
             return false;
         }
