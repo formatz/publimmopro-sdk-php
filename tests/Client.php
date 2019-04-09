@@ -36,11 +36,9 @@ final class ClientTest extends TestCase
         $this->assertEquals(Client::LOCATION_TYPE_SEASON, 2);
         $this->assertEquals(Client::LOCATION_TYPE_YEAR, 3);
 
-        /*
-        $this->assertEquals(Client::PROMOTION_OBJECTS , 0);
-        $this->assertEquals(Client::PROMOTION_NEW_OBJECTS , 1);
-        $this->assertEquals(Client::PROMOTION_DOCUMENTS , 2);
-         */
+        $this->assertEquals(Client::PROMOTION_TYPE_NOT_PROMOTION, 0);
+        $this->assertEquals(Client::PROMOTION_TYPE_NEW, 1);
+        $this->assertEquals(Client::PROMOTION_TYPE_PROMOTION, 2);
     }
 
     public function testQueryUrlCanBeBuilt(): void

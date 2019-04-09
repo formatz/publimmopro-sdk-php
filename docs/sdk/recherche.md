@@ -1,6 +1,6 @@
 # Recherche
 
-```
+```php
 $Client = new Client('2121313', 'unecle');
 
 $Client->setType(Client::PARKING)
@@ -12,7 +12,7 @@ $Client->setType(Client::PARKING)
 
 Utilisez la classe `PublimmoPro\Client` pour pouvoir faire des requêtes à l'API.
 
-```
+```php
 use \PublimmoPro\Client;
 
 // Indiquez l'ID d'agence Publimmo, et sa clé
@@ -21,50 +21,111 @@ $PublimmoClient = new Client(99999, 'key');
 
 ## Méthodes
 
-### setType(...$types)
-
-Permet de faire une recherche d'objets selon les critères définis.
-
-#### Paramètres
-
-| Param | Type | Description |
-| --- | --- | --- |
-| $types | int | Liste de types, 1 à 6 types possibles |
-
-
-### Constantes de types
-
- - APPARTMENT
- - BUILDING
- - COMMERCIAL
- - HOUSE
- - LAND
- - PARKING
-
-#### Exemple 
-
-```php
-$Client->setType(Client::APPARTMENT,Client::HOUSE);
-```
+[filename](client/setType.md ':include')
 
 ---
 
-### query()
-
-Envoie la requête au webservice et récupère les résultats.
-
-#### Paramètres
-
-Pas de paramètres
-
-#### Retour
-
-Une instance de `PublimmoPro\ObjectCollection` est retournée.
+[filename](client/query.md ':include')
 
 ---
 
-#### Exemple 
+[filename](client/getQueryURL.md ':include')
 
-```php
-$Client->query();
-```
+---
+
+[filename](client/setCity.md ':include')
+
+---
+
+[filename](client/setCityId.md ':include')
+
+---
+
+[filename](client/setCountry.md ':include')
+
+---
+
+[filename](client/setCourtierId.md ':include')
+
+---
+
+[filename](client/setDisponiblite.md ':include')
+
+---
+
+[filename](client/setDistance.md ':include')
+
+---
+
+[filename](client/setForeigners.md ':include')
+
+---
+
+[filename](client/setId.md ':include')
+
+---
+
+[filename](client/setIds.md ':include')
+
+---
+
+[filename](client/setLanguage.md ':include')
+
+---
+
+[filename](client/setLocationType.md ':include')
+
+---
+
+[filename](client/setNpaOrder.md ':include')
+
+---
+
+[filename](client/setPriceRange.md ':include')
+
+---
+
+[filename](client/setPromotionType.md ':include')
+
+---
+
+[filename](client/setRegion.md ':include')
+
+---
+
+[filename](client/setResidenceSecondaire.md ':include')
+
+---
+
+[filename](client/setRoomRange.md ':include')
+
+---
+
+[filename](client/setSearchString.md ':include')
+
+---
+
+[filename](client/setSelfOnly.md ':include')
+
+---
+
+[filename](client/setSort.md ':include')
+
+---
+
+[filename](client/setSortDirection.md ':include')
+
+---
+
+[filename](client/setSurfaceRange.md ':include')
+
+---
+
+[filename](client/setTransaction.md ':include')
+
+---
+
+[filename](client/setType.md ':include')
+
+---
+

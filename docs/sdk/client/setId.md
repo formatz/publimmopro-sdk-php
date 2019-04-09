@@ -1,0 +1,18 @@
+### setId(mixed $ref)
+
+Définit l'identifiant Publimmo ou la référence agence de l'objet à chercher.
+
+#### Paramètres
+
+| Param | Type | Description |
+| --- | --- | --- |
+| $ref | mixed | Identifiant Publimmo ou référence d'agence |
+
+
+
+#### Exemple 
+
+```php
+$Client->setId(54589);
+$Client->setId('Villa 34');
+```

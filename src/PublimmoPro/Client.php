@@ -259,9 +259,9 @@ class Client
         return $this;
     }
 
-    public function setId(int $id)
+    public function setId(mixed $ref)
     {
-        $this->id = $id;
+        $this->id = $ref;
 
         return $this;
     }
@@ -320,7 +320,7 @@ class Client
         return $this;
     }
 
-    public function setTriSens(string $sortDirection)
+    public function setSortDirection(string $sortDirection)
     {
         if ($sortDirection == 'asc') {
             $this->triSens = 2;

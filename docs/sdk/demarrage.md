@@ -6,7 +6,7 @@
 
 Ajoutez ce package à votre fichier composer.json
 
-```
+```json
 "repositories": [
   ...
   {
@@ -26,7 +26,7 @@ Ajoutez ce package à votre fichier composer.json
 
 Puis ce requirement
 
-```
+```json
 "require": {
   ...
   "publimmopro/phpsdk": "*",
@@ -44,7 +44,7 @@ Placez le contenu de `/src/PublimmoPro/` dans un répertoire accessible à votre
 
 ## Initialisation
 
-```
+```php
 use \PublimmoPro\Client;
 
 // Indiquez l'ID d'agence Publimmo, et sa clé
