@@ -1,4 +1,4 @@
-# Recherche
+# Client de recherche
 
 ```php
 use \PublimmoPro\Client;

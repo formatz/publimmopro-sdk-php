@@ -1,0 +1,99 @@
+{
+  "dateCreation": "13.09.2018",
+  "surface": "119",
+  "desc": "Idéalement situé à égale distance de la gare et des bords du lac.<br /><br />Ce bel appartement vous offrira bien être et confort au cœur de la Riviera vaudoise.  <br /><br />Il se compose de: <br /><br />- 1 hall d'entrée avec rangement et armoire aérée<br />- 1 cuisine ouverte sur le salon lumineux<br />- 2 chambres dont une suite parentale avec salle de bain privée<br />- 2 salles de bain, dont 1 avec WC<br />- 1 grand balcon orienté sud avec vue sur les montagnes<br /><br />L'immeuble date des années 90, mais a bénéficié d'un ravalement de façade en 2004.<br /><br />L'appartement vient d\u2019être repeint, la moquette changée et le parquet remis à neuf.<br /><br />N'hésitez pas à découvrir le charme de ce bien idéal pour un jeune couple avec enfant ...",
+  "adresse": "Avenue du Clos d'Aubonne 1",
+  "transaction": "A Louer",
+  "descShort": "Appartement 4.5 pièces - 119 m²",
+  "contact": {
+    "zip": "1814",
+    "contactId": 10029,
+    "contactWebmail": "nordmann.pierre-alain-10029",
+    "mob": "+41 78 829 26 00",
+    "address": "CP 501",
+    "tel": "+41 21 943 61 81",
+    "name": "Pierre-Alain Nordmann",
+    "company": "Acheter-Louer.ch @ Publimmo Sàrl",
+    "city": "La Tour de Peilz",
+    "courtierPrincipal": "Pierre-Alain Nordmann"
+  },
+  "soustitre": "Une proximité idéale avec la gare de La-Tour-de-Peilz",
+  "titre": "Appartement 4.5 pièces à La Tour-de-Peilz",
+  "locationTypeLabel": "saisonni&egrave;re",
+  "id": 258429,
+  "caddy": false,
+  "sousType": "Appartement",
+  "locationType": 2,
+  "localite": "La Tour-de-Peilz",
+  "surfaceParcelle": "1'500",
+  "parcs": 1,
+  "dateMaj": "13.09.2018",
+  "motscle": "Proche gare, Proche lac, Balcon,",
+  "prix": "1'850.-",
+  "disponibilite": "Disponible",
+  "typeCode": 1,
+  "canton": "VD",
+  "disponibiliteCode": 0,
+  "refAgence": "Ref-24-2016",
+  "photos": [
+    {
+      "URL": "https://media2.publimmo.ch/thumbs/gallery/95595/1023594.jpg",
+      "thumb": "https://media2.publimmo.ch/thumbs/small/95595/1023594.jpg"
+    },
+    {
+      "URL": "https://media2.publimmo.ch/thumbs/gallery/95595/1023595.jpg",
+      "thumb": "https://media2.publimmo.ch/thumbs/small/95595/1023595.jpg"
+    },
+    {
+      "URL": "https://media2.publimmo.ch/thumbs/gallery/95595/1023596.jpg",
+      "thumb": "https://media2.publimmo.ch/thumbs/small/95595/1023596.jpg"
+    },
+    {
+      "URL": "https://media2.publimmo.ch/thumbs/gallery/95595/1023597.jpg",
+      "thumb": "https://media2.publimmo.ch/thumbs/small/95595/1023597.jpg"
+    },
+    {
+      "URL": "https://media2.publimmo.ch/thumbs/gallery/95595/1023598.jpg",
+      "thumb": "https://media2.publimmo.ch/thumbs/small/95595/1023598.jpg"
+    },
+    {
+      "URL": "https://media2.publimmo.ch/thumbs/gallery/95595/1023599.jpg",
+      "thumb": "https://media2.publimmo.ch/thumbs/small/95595/1023599.jpg"
+    },
+    {
+      "URL": "https://media2.publimmo.ch/thumbs/gallery/95595/1023600.jpg",
+      "thumb": "https://media2.publimmo.ch/thumbs/small/95595/1023600.jpg"
+    },
+    {
+      "URL": "https://media2.publimmo.ch/thumbs/gallery/95595/1023601.jpg",
+      "thumb": "https://media2.publimmo.ch/thumbs/small/95595/1023601.jpg"
+    },
+    {
+      "URL": "https://media2.publimmo.ch/thumbs/gallery/95595/1030628.jpg",
+      "thumb": "https://media2.publimmo.ch/thumbs/small/95595/1030628.jpg"
+    }
+  ],
+  "pieces": "4.5",
+  "technicalData": [
+    {"name": "Vue", "value": "Panoramique, Montagne(s), Campagne"},
+    {"name": "Date de disponibilité", "value": "De suite"},
+    {"name": "Location", "value": "saisonnière"},
+    {"name": "Vente aux non résidents étrangers", "value": "oui"},
+    {"name": "Vente en résidence secondaire", "value": "possible"},
+    {"name": "Nombre de pièces", "value": "4.5"},
+    {"name": "Nombre de chambres", "value": "2"},
+    {"name": "Nombre de salles de bain", "value": "2"},
+    {"name": "Surface habitable (m2)", "value": "112"},
+    {"name": "Surface balcon (m2)", "value": "14"},
+    {"name": "Surface terrasse (m2)", "value": "20"},
+    {"name": "Surface jardin (m2)", "value": "100"},
+    {"name": "Surface (m2) ", "value": "119"},
+    {"name": "Année de construction", "value": "1993"},
+    {"name": "Année de rénovation", "value": "2004"},
+    {"name": "Parc(s) extérieur(s)", "value": "1"},
+    {"name": "Etage", "value": "3 / 5"},
+    {"name": "Surface du terrain (m2)", "value": "1'500"}
+  ],
+  "prixEuro": "1'682.-",
+  "npa": "1814"
+}

@@ -1,5 +1,6 @@
 <?php
 use PublimmoPro\ObjectCollection;
+use PublimmoPro\ObjectEntity;
 
 namespace PublimmoPro;
 
@@ -412,11 +413,27 @@ class Client
         return self::API_URL.'/'.$this->idagence.'/objets?'.http_build_query($args);
     }
 
-    public function query()
+    public function query(int $id = null)
     {
-        $results = $this->fetch($this->getQueryURL());
+        if ($id !== null && is_int($id)) {
+            // this is an object query
+            $response = $this->fetch(self::API_URL.'/'.$this->idagence.'/objets/'.$id);
 
-        return new ObjectCollection($results->results, $results->resultTotal);
+            if (empty($response)) {
+                return false;
+            }
+
+            return new ObjectEntity($response);
+        } elseif ($id === null) {
+            // this is a search query
+            $response = $this->fetch($this->getQueryURL());
+
+            if (empty($response)) {
+                return false;
+            }
+
+            return new ObjectCollection($response->results, $response->resultTotal);
+        }
     }
 
     private function fetch($url){

@@ -1,0 +1,78 @@
+{
+  "dateCreation": "06.07.2017",
+  "desc": "Magnifique parcelle à bâtir au village de Val-d'Illiez jouissant d'un environnement paisible et verdoyant et d'une vue dégagée.<br /><br />Cette dernière sise en zone de chalets (indice 0.3) et d'une surface totale de 2459 m2. Peut-être divisée et achetée en lots plus petits. La surface habitable constructible théorique maximum est de 738 m2.<br /><br />La parcelle peut accueillir une ou plusieurs constructions de trois niveaux au maximum. <br />Uniquement pour résidence principale. Environnement unique en plein nature.<br /><br />Opportunité à saisir, PAIEMENT LORS DE L'AUTORISATION DE CONSTRUCTION EN FORCE !<br /><br />Belle opportunité à saisir ! <br />Alors qu'attendez-vous, contactez-nous pour une visite !",
+  "surface": "2'459",
+  "prix": "145.-",
+  "transaction": "A Vendre",
+  "disponibilite": "Disponible",
+  "typeCode": 5,
+  "canton": "VS",
+  "disponibiliteCode": 0,
+  "descShort": "Terrain  - 2'459 m²",
+  "contact": {
+    "zip": "1342",
+    "contactId": 34141,
+    "contactWebmail": "courtier.courtier-55555",
+    "address": "Sur l'exemple 5",
+    "tel": "+41 21 555 18 61",
+    "company": "Company exemple",
+    "city": "Lausanne",
+    "courtierPrincipal": "John Courtier"
+  },
+  "soustitre": "Superbe parcelle à bâtir équipée à Val-d'Illiez",
+  "titre": "Terrain à Val-d'Illiez",
+  "refAgence": "EG_11",
+  "id": 163195,
+  "photos": [
+    {
+      "URL": "https://media2.publimmo.ch/thumbs/gallery/16/163195/2988643.jpg",
+      "thumb": "https://media2.publimmo.ch/thumbs/small/16/163195/2988643.jpg"
+    },
+    {
+      "desc": "environnement verdoyant et calme",
+      "URL": "https://media2.publimmo.ch/thumbs/gallery/16/163195/2988639.jpg",
+      "thumb": "https://media2.publimmo.ch/thumbs/small/16/163195/2988639.jpg"
+    },
+    {
+      "desc": "situation",
+      "URL": "https://media2.publimmo.ch/thumbs/gallery/16/163195/2988650.jpg",
+      "thumb": "https://media2.publimmo.ch/thumbs/small/16/163195/2988650.jpg"
+    },
+    {
+      "desc": "vue aérienne",
+      "URL": "https://media2.publimmo.ch/thumbs/gallery/16/163195/2988644.jpg",
+      "thumb": "https://media2.publimmo.ch/thumbs/small/16/163195/2988644.jpg"
+    },
+    {
+      "desc": "vue de la parcelle",
+      "URL": "https://media2.publimmo.ch/thumbs/gallery/16/163195/2988647.jpg",
+      "thumb": "https://media2.publimmo.ch/thumbs/small/16/163195/2988647.jpg"
+    },
+    {
+      "desc": "vue aérienne",
+      "URL": "https://media2.publimmo.ch/thumbs/gallery/16/163195/2988649.jpg",
+      "thumb": "https://media2.publimmo.ch/thumbs/small/16/163195/2988649.jpg"
+    },
+    {
+      "desc": "vue aérienne",
+      "URL": "https://media2.publimmo.ch/thumbs/gallery/16/163195/2988645.jpg",
+      "thumb": "https://media2.publimmo.ch/thumbs/small/16/163195/2988645.jpg"
+    },
+    {
+      "desc": "vue depuis la parcelle",
+      "URL": "https://media2.publimmo.ch/thumbs/gallery/16/163195/2988640.jpg",
+      "thumb": "https://media2.publimmo.ch/thumbs/small/16/163195/2988640.jpg"
+    }
+  ],
+  "caddy": false,
+  "technicalData": [
+    {"name": "Vue", "value": "Dégagée, Panoramique, Montagne(s)"},
+    {"name": "Surface (m2) ", "value": "2'459"},
+    {"name": "Indice d'utilisation du sol (CUS)", "value": "0.3"}
+  ],
+  "localite": "Val-d'Illiez",
+  "prixEuro": "132.-",
+  "npa": "1873",
+  "dateMaj": "18.02.2019",
+  "motscle": "terrain à bâtir, parcelle à vendre, terrain à Val-d'Illiez, montagnes, ski, contruire à Val-d'Illiez, chalet for sale, chalet to buy, chalet in swiss, Portes-du-Soleil, building land"
+}

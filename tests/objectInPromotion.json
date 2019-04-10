@@ -1,0 +1,246 @@
+{
+  "dateCreation": "08.11.2018",
+  "surface": "81",
+  "desc": "Situés dans une commune en plein essor, nous vous proposons 12 appartements à vendre sur plans, dans un immeuble faisant partie d'un nouveau quartier aux abords de la rivière. <br /><br />Le complexe abritera 4 immeubles, 3 sont prévus pour la location et le 4ème pour la vente. Ce dernier contiendra les lots suivants:<br /><br />- A01 - Rez-de-chaussée - 3.5 pces - 79.20m2 (pondérée)<br />- A02 - Rez-de-chaussée - 2.5 pces - 61.70m2 (pondérée)<br />- A11 - 1er étage - 3.5 pces - 83.95m2 (pondérée)<br />- A12 - 1er étage - 2.5 pces - 61.25m2 (pondérée)<br />- A13 - 1er étage - 2.5 pces - 61.25m2 (pondérée)<br />- A14 - 1er étage - 4.5 pces - 100m2 (pondérée)<br />- A21 - 2ème étage - 3.5 pces - 83.95m2 (pondérée)<br />- A22 - 2ème étage - 2.5 pces - 61.25m2 (pondérée)<br />- A23 - 2ème étage - 2.5 pces - 61.25m2 (pondérée)<br />- A24 - 2ème étage - 4.5 pces - 100m2 (pondérée)<br />- A31 - Combles - 4.5 pces - 103.85m2 (pondérée)<br />- A32 - Combles - 3.5 pces - 88.80m2 (pondérée)<br /><br />L'immeuble contient également 3 garages-box au prix de CHF 25'000.- (en SUS du prix de vente), 12 places de parc couvertes au prix de CHF 15'000.- (en SUS du prix de vente)",
+  "transaction": "A Vendre",
+  "descShort": "Appartement 3.5 pièces - 81 m²",
+  "contact": {
+    "zip": "1003",
+    "contactId": 281594,
+    "fax": "+ 41 21 555 50 71",
+    "courtierTel": "+41 21 555 90 40",
+    "contactWebmail": "des.ventes.courtier-55555",
+    "address": "Avenue de l'exemple 1",
+    "tel": "+41 21 555 90 40",
+    "name": "SERVICE DES VENTES",
+    "company": "Régie Exemple SA",
+    "courtierFax": "+41 21 555 50 71",
+    "courtierPrincipal": "SERVICE DES VENTES",
+    "city": "Lausanne"
+  },
+  "soustitre": "12 APPARTEMENTS A VENDRE SUR PLAN",
+  "titre": "Appartement 3.5 pièces à Granges-près-Marnand",
+  "id": 277846,
+  "caddy": false,
+  "sousType": "Appartement",
+  "localite": "Granges-près-Marnand",
+  "surfaceParcelle": "5'655",
+  "dateMaj": "08.04.2019",
+  "prix": "430'000.-",
+  "disponibilite": "Disponible",
+  "promotionTable": [
+    {
+      "id": 277846,
+      "pieces": "3.5",
+      "surface": "81",
+      "prix": "430'000.-",
+      "disponibilite": "Disponible",
+      "typeCode": 1,
+      "lot": "A01",
+      "disponibiliteCode": 0,
+      "type": "Appartement",
+      "etage": "Rez-jardin"
+    },
+    {
+      "id": 277848,
+      "pieces": "2.5",
+      "surface": "61.7",
+      "prix": "325'000.-",
+      "disponibilite": "Disponible",
+      "typeCode": 1,
+      "lot": "A02",
+      "disponibiliteCode": 0,
+      "type": "Appartement",
+      "etage": "Rez-jardin"
+    },
+    {
+      "id": 277849,
+      "pieces": "3.5",
+      "surface": "83.95",
+      "prix": "445'000.-",
+      "disponibilite": "Disponible",
+      "typeCode": 1,
+      "lot": "A11",
+      "disponibiliteCode": 0,
+      "type": "Appartement",
+      "etage": "1"
+    },
+    {
+      "id": 277850,
+      "pieces": "2.5",
+      "surface": "61.25",
+      "prix": "320'000.-",
+      "disponibilite": "Disponible",
+      "typeCode": 1,
+      "lot": "A12",
+      "disponibiliteCode": 0,
+      "type": "Appartement",
+      "etage": "1"
+    },
+    {
+      "id": 277851,
+      "pieces": "2.5",
+      "surface": "61.25",
+      "prix": "320'000.-",
+      "disponibilite": "Disponible",
+      "typeCode": 1,
+      "lot": "A13",
+      "disponibiliteCode": 0,
+      "type": "Appartement",
+      "etage": "1"
+    },
+    {
+      "id": 277852,
+      "pieces": "4.5",
+      "surface": "100",
+      "prix": "530'000.-",
+      "disponibilite": "Disponible",
+      "typeCode": 1,
+      "lot": "A14",
+      "disponibiliteCode": 0,
+      "type": "Appartement",
+      "etage": "1"
+    },
+    {
+      "id": 277853,
+      "pieces": "3.5",
+      "surface": "83.95",
+      "prix": "450'000.-",
+      "disponibilite": "Réservé",
+      "typeCode": 1,
+      "lot": "A21",
+      "disponibiliteCode": 1,
+      "type": "Appartement",
+      "etage": "2"
+    },
+    {
+      "id": 277855,
+      "pieces": "2.5",
+      "surface": "61.25",
+      "prix": "325'000.-",
+      "disponibilite": "Disponible",
+      "typeCode": 1,
+      "lot": "A22",
+      "disponibiliteCode": 0,
+      "type": "Appartement",
+      "etage": "2"
+    },
+    {
+      "id": 277856,
+      "pieces": "2.5",
+      "surface": "61.25",
+      "prix": "325'000.-",
+      "disponibilite": "Disponible",
+      "typeCode": 1,
+      "lot": "A23",
+      "disponibiliteCode": 0,
+      "type": "Appartement",
+      "etage": "2"
+    },
+    {
+      "id": 277857,
+      "pieces": "4.5",
+      "surface": "100",
+      "prix": "535'000.-",
+      "disponibilite": "Disponible",
+      "typeCode": 1,
+      "lot": "A24",
+      "disponibiliteCode": 0,
+      "type": "Appartement",
+      "etage": "2"
+    },
+    {
+      "id": 277858,
+      "pieces": "4.5",
+      "surface": "103.85",
+      "prix": "560'000.-",
+      "disponibilite": "Disponible",
+      "typeCode": 1,
+      "lot": "A31",
+      "disponibiliteCode": 0,
+      "type": "Appartement",
+      "etage": "Combles"
+    },
+    {
+      "id": 277859,
+      "pieces": "3.5",
+      "surface": "88.8",
+      "prix": "480'000.-",
+      "disponibilite": "Disponible",
+      "typeCode": 1,
+      "lot": "A32",
+      "disponibiliteCode": 0,
+      "type": "Appartement",
+      "etage": "Combles"
+    }
+  ],
+  "typeCode": 1,
+  "disponibiliteCode": 0,
+  "canton": "VD",
+  "photos": [
+    {
+      "URL": "https://media2.publimmo.ch/thumbs/gallery/27/277842/3078189.jpg",
+      "thumb": "https://media2.publimmo.ch/thumbs/small/27/277842/3078189.jpg"
+    },
+    {
+      "URL": "https://media2.publimmo.ch/thumbs/gallery/27/277842/3045461.jpg",
+      "thumb": "https://media2.publimmo.ch/thumbs/small/27/277842/3045461.jpg"
+    },
+    {
+      "URL": "https://media2.publimmo.ch/thumbs/gallery/27/277842/3045462.jpg",
+      "thumb": "https://media2.publimmo.ch/thumbs/small/27/277842/3045462.jpg"
+    },
+    {
+      "URL": "https://media2.publimmo.ch/thumbs/gallery/27/277842/3045463.jpg",
+      "thumb": "https://media2.publimmo.ch/thumbs/small/27/277842/3045463.jpg"
+    },
+    {
+      "URL": "https://media2.publimmo.ch/thumbs/gallery/27/277842/3045464.jpg",
+      "thumb": "https://media2.publimmo.ch/thumbs/small/27/277842/3045464.jpg"
+    },
+    {
+      "URL": "https://media2.publimmo.ch/thumbs/gallery/27/277842/3045465.jpg",
+      "thumb": "https://media2.publimmo.ch/thumbs/small/27/277842/3045465.jpg"
+    },
+    {
+      "URL": "https://media2.publimmo.ch/thumbs/gallery/27/277842/3045466.jpg",
+      "thumb": "https://media2.publimmo.ch/thumbs/small/27/277842/3045466.jpg"
+    },
+    {
+      "URL": "https://media2.publimmo.ch/thumbs/gallery/27/277842/3045467.jpg",
+      "thumb": "https://media2.publimmo.ch/thumbs/small/27/277842/3045467.jpg"
+    },
+    {
+      "URL": "https://media2.publimmo.ch/thumbs/gallery/27/277842/3045468.jpg",
+      "thumb": "https://media2.publimmo.ch/thumbs/small/27/277842/3045468.jpg"
+    },
+    {
+      "URL": "https://media2.publimmo.ch/thumbs/gallery/27/277842/3045469.jpg",
+      "thumb": "https://media2.publimmo.ch/thumbs/small/27/277842/3045469.jpg"
+    },
+    {
+      "URL": "https://media2.publimmo.ch/thumbs/gallery/27/277842/3045470.jpg",
+      "thumb": "https://media2.publimmo.ch/thumbs/small/27/277842/3045470.jpg"
+    }
+  ],
+  "pieces": "3.5",
+  "technicalData": [
+    {"name": "Lot", "value": "A01"},
+    {"name": "Vue", "value": "Dégagée, Campagne"},
+    {"name": "Nombre de pièces", "value": "3.5"},
+    {"name": "Nombre de chambres", "value": "2"},
+    {"name": "Nombre de salles de bain", "value": "2"},
+    {"name": "Surface habitable (m2)", "value": "78.1"},
+    {"name": "Surface terrasse (m2)", "value": "8"},
+    {"name": "Surface (m2) ", "value": "81"},
+    {"name": "Année de construction", "value": "2019"},
+    {"name": "Box(s)", "value": "1"},
+    {"name": "Parc(s) extérieur(s) couvert(s)", "value": "1"},
+    {"name": "Type d'étage", "value": "Rez-jardin"},
+    {"name": "Etat", "value": "Neuf"},
+    {"name": "Surface du terrain (m2)", "value": "5'655"}
+  ],
+  "garages": 2,
+  "prixEuro": "390'870.-",
+  "npa": "1523"
+}
