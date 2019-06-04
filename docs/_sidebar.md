@@ -11,3 +11,5 @@
   * [Régions](/api/regions.md)
   * [Communes](/api/communes.md)
   * [Types](/api/types.md)
+
+* [FAQ](/faq.md)
