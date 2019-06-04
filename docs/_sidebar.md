@@ -1,8 +1,9 @@
 * SDK
   * [Démarrage](/sdk/demarrage.md)
-  * [Recherche](/sdk/recherche.md)
+  * [Client](/sdk/recherche.md)
   * [Object Collection](/sdk/objectCollection.md)
-  * [Détail d'objet](/sdk/objet.md)
+  * [Object Entity](/sdk/objectEntity.md)
+  * [Mailer](/sdk/mailer.md)
 
 * API
   * [Recherche](/api/recherche.md)

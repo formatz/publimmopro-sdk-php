@@ -8,6 +8,9 @@ $Client = new Client('2121313', 'unecle');
 $Client->setType(Client::PARKING)
        ->setDisponiblite(Client::AVAILABILITY_IS_AVAILABLE)
        ->query();
+
+// ou obtenir un objet directement
+$Client->query(43242);
 ```
 
 ## Initialisation

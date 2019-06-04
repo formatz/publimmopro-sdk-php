@@ -11,5 +11,5 @@ Définit dans quelle ville rechercher.
 #### Exemple 
 
 ```php
-$Client-setCityId(481);
+$Client->setCityId(481);
 ```
