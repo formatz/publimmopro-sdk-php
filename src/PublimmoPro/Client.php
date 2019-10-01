@@ -184,6 +184,9 @@ class Client
     /** @var int $extendedInfos Allow to get more infos per object */
     private $extendedInfos = 1;
 
+    /** @var int $plaquetteUrl Url to a brochure pdf file */
+    private $plaquetteUrl;
+
     /**
      * Class constructor
      */

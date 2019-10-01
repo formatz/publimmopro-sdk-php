@@ -54,6 +54,7 @@ https://syn.publimmo.ch/api/v1/{idagence}/objets/{id}
 | motscle | String | Minergie, Tour | Mots-clés définis dans la fiche |
 | dateCreation | String | 13.08.2012 | Date de création de l'objet |
 | dateMaj | String | 14.08.2014 | Date modification du prix de l'objet (selon critères PI) |
+| plaquetteUrl | String | http://media1.publimmo.ch/.pdf/0/10543/258429_fr_ac3a7a2d.pdf | Lien vers la plaquette Publimmo (nécessite une clé valide - voir key ci-dessus) |
 
 ## Structures
 
