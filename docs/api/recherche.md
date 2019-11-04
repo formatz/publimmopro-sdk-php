@@ -41,6 +41,7 @@ https://syn.publimmo.ch/api/v1/{idagence}/objets
 | disponiblite | int | 2 | Code de disponiblité (0=disponible,1=reserve,2=vendu,3=option) |
 | residenceSecondaire | int | 1 | Vente en résidence secondaire si précisé dans Publimmo (1=OUI, 2=NON) |
 | locationType | int | 2 | Location saisonnière (1=semaine,2=saison,3=année) |
+| sousType | int | 1 | Sous-type des objets pour le type sélectionné (1 type max), consulter [api/Types](/api/types)  |
 | npaOrder | int | 1204 | Trie les résultats en commençant par le npa indiqué |
 
 ## Réponse

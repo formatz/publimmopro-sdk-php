@@ -53,6 +53,12 @@ final class ClientTest extends TestCase
         $this->assertTrue(strpos($queryUrl, 'type_1='.Client::APPARTMENT) !== false);
     }
 
+    public function testSubtypeCanBeSet(): void
+    {
+        $queryUrl = $this->Client->setSubType(0)->getQueryURL();
+        $this->assertTrue(strpos($queryUrl, 'sousType=0') !== false);
+    }
+
     public function testUpToSixTypesCanBeSet(): void
     {
         $queryUrl = $this->Client->setType(

@@ -100,6 +100,9 @@ class Client
     /** @var int $type_6 6th type of requested object */
     private $type_6;
 
+    /** @var int $sousType subType of the requested object (must use only type_1) */
+    private $sousType;
+
     /** @var int $p The type of promotion */
     private $p; //| int | 1 | 2=Fiches promotions uniquement,1=Objets neufs/promotion uniquement, 0=Objets (par défaut) |
 
@@ -204,6 +207,13 @@ class Client
         foreach ($types as $k => $type) {
             $this->{'type_'.($k+1)} = $type;
         }
+
+        return $this;
+    }
+
+    public function setSubType(int $subtype)
+    {
+        $this->sousType = $subtype;
 
         return $this;
     }
