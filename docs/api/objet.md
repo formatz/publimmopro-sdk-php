@@ -42,7 +42,7 @@ https://syn.publimmo.ch/api/v1/{idagence}/objets/{id}
 | titre | String | Maison 10 pièces à Puidoux | Titre de l'objet (généré automatiquement) |
 | typeCode | int  | 1 | Type d'objet  5 (1=Appartement, 2=Immeuble, 3=Commercial, 4=Maison, 5=Terrain,6=Parc,7=Promotion) |
 | disponibilite | String | Réservé | Disponiblité de l'objet |
-| disponibiliteCode | int | 2 | Code de disponiblité de l'objet (0=disponible,1=reserve,2=vendu,3=option) |
+| disponibiliteCode | int | 2 | Code de disponiblité de l'objet (0=disponible,1=reserve,2=vendu/loué,3=option) |
 | promotionTable | Array |  | voir [promotionTable](#promotionTable) |
 | movieUrl | String |  | Lien sur film youtube |
 | virtualVisitUrl | String |  | Lien sur la visite virtuelle |
