@@ -1,6 +1,4 @@
 <?php
-use PublimmoPro\ObjectCollection;
-use PublimmoPro\ObjectEntity;
 
 namespace PublimmoPro;
 
